@@ -1,0 +1,332 @@
+section{
+  position:relative;
+}
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+}
+h4{
+  font-size: 1.563rem;
+  font-weight: 400;
+  color: #111;
+}
+h2{
+  font-size: 2.813rem;
+  color: #111;
+  font-weight: bold;
+}
+p{
+  font-size: 1.063rem;
+  color: #777;
+}
+.center{
+  text-align: center;
+}
+.p30{
+  padding-bottom: 30px;
+}
+.p50{
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+.main_1{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+video{
+  width: 100%;
+  /* height: 100%; */
+}
+.video_wrap{
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.video_wrap>h2{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+.scroll{
+  position:absolute;
+  bottom: 60px; left: 50%;
+  transform: translateX(-50%); /*이거까지 해줘야 가로가운데가 된다*/
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes scroll{
+  0%{ bottom:60px;}
+  50%{bottom:90px;}
+  100%{bottom:60px;}
+}
+.fix_bnr{
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  position: fixed;
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+}
+.fix_bnr>li{
+  flex: 1;
+}
+.fix_bnr>li>a{
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.customer{
+  background-color: #98384b;
+}
+.reserve{
+  background-color: #8d7249;
+}
+.tel_num{
+  background-color: #000;
+}
+.tel_num>.tel{
+  display: inline-block;
+  width: 18px; height: 38px;
+  background-image: url(../img/tel-wh.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#main_2{
+  padding-top: 170px;
+}
+.fix_bg{
+  width: 100%; height: 330px;
+  margin-top: 100px;
+  background-image: url(../img/main1-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#main_3{
+  padding-top: 170px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main_3>.text{
+  width: 40%;
+  padding-top: 65px;
+}
+#main_3>.imgs{
+  width: 60%;
+  display: flex;
+}
+#main_3>.imgs>div{
+  /* width: 33.333%; */
+  /* padding-left: 20px;  */
+  /*div에 패딩을 줬다는 건 사진에 포함되기때문에 여기에 사진X 
+  이건 바깥쪽이고 안에 div를 한번 더 줬다는것*/
+  /*이걸 안 해주려면...마진을 따로 주고 여백을 줘야하기 때문에 칼크로 계산해서 줘야 함*/
+  width: calc(33.3333% - 20px);
+  margin-left: 20px;
+  height: 730px;
+}
+#main_3>.imgs>div:first-child{
+  margin-top: 120px;
+  background-image: url(../img/main2-img1.jpg);
+}
+#main_3>.imgs>div:nth-child(2){
+  background-image: url(../img/main2-img2.jpg);
+}
+#main_3>.imgs>div:last-child{
+  margin-top: 200px;
+  background-image: url(../img/main2-img3.jpg);
+}
+.swiper{
+  display: none;
+}
+
+
+#main_4{
+  margin-top: 110px;
+  padding-top: 110px ;
+  width: 100%;
+  background-image: url(../img/main3-bg.jpg);
+  background-repeat: no-repeat;
+  
+}
+
+.wh_text>h3{
+  font-size: 1.875rem;
+  text-align: center;
+  color: #fff;
+}
+.wh_text>p{
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+}
+.list_3{
+  margin-top: 60px;
+ display: flex;
+ justify-content: space-between;
+}
+
+#main_5{
+  margin-top: 110px;
+  padding: 110px 0 190px;
+  width: 100%;
+  background-image: url(../img/main4-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.model_txt{
+  text-align: center;
+}
+.model_txt>h4{
+  font-size: 1.5rem;
+  color: #8d7249;
+  margin-bottom: 30px;
+}
+.model_txt>h3{
+  font-size: 1.375rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.model_txt>h2{
+  font-size: 2.25rem;
+  color: #fff;
+}
+.model_wrap{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.model_box{
+  /* width: calc(25% - 15px); */
+  width: calc((100% - 60px) / 4);
+  border: 1px solid #aaabab;
+  padding: 45px 30px 40px;
+  box-sizing: border-box;
+}
+.scale_txt{
+  text-align: center;
+}
+.scale_txt>h5{
+  font-size: 1.875rem;
+  color: #fff;
+}
+.scale_txt>h5>strong{
+  font-size: 3.125rem;
+}
+.scale_txt>p{
+  font-size: 1.125rem;
+  color: #aaabab;
+}
+.scale_btn{
+  display: flex;
+}
+.scale_btn>a{
+  display: block;
+  width: 100%;
+  padding: 65px 0 35px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center 25px; /*좌우 위아래(위에서부터 20px 내려와라)순서*/
+}
+.floor{
+  background-color: #8d7249;
+  background-image: url(../img/floorplan-icon.png);
+}
+.vr{
+  background-color: #59483f;
+  background-image: url(../img/vr-icon.png);
+}
+
+@media (max-width:1500px){
+  video{
+     height: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .w1200{
+    width: 100%;
+  }
+  .main_1{
+    height: 250px;
+    top: 80px;
+  }
+  .video_wrap{
+    text-align: center;
+    height: 250px;
+  }
+
+  .video_wrap>h2{
+    font-size: 1.5rem;
+  }
+  .scroll{
+    display: none;
+  }
+  .fix_bg{
+    margin-top: 40px;
+    background-attachment: scroll;
+    height: 200px;
+  }
+
+  #main_3>.text{
+    width: 100%;
+  }
+  #main_3>.imgs{
+    width: 100%;
+  }
+  #main_3>.imgs>div{
+    margin-top: 40px !important;
+    margin-left: 0;
+    height: 500px;
+    display: none;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+  }
+  #main_3>.imgs>div:first-child{
+    display: block;width: 100%;
+  }
+
+  #main_5{
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+  .model_wrap{
+    margin-top: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .model_box{
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+  }
+  .scale_btn>a{
+    padding: 50px 0 15px;
+    background-position: center 15px; 
+  }
+}

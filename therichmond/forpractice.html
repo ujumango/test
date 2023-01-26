@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .tab_wrap{
+      width: 500px; height: 500px;
+      border: 1px solid red;
+      margin: 0 auto;
+    }
+    .tab_list{
+      display: flex;
+    }
+    .tab_list>li{
+      flex: 1;
+      border: 1px solid #000;
+      list-style: none;
+    }
+    .tab_wrap>div{
+      width: 100%; height: 400px;
+      background-color: antiquewhite;
+    }
+    #tab2_txt{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 id = "add"></h1>
+
+  <button onclick="addNum(1,2)">click</button>
+  <button onclick="alert('test click')">click</button>
+
+
+
+<section>
+  <div class="tab_wrap">
+    <ul class="tab_list">
+      <li onclick="tab1()">tab1</li> 
+      <!--괄호를 무조건 넣어야 함-->
+      <li onclick="tab2()">tab2</li>
+    </ul>
+    <div id="tab1_txt">
+      <h1>tab1</h1>
+    </div>
+    <div id="tab2_txt">
+      <h1>tab2</h1>
+    </div>
+  </div>
+</section>
+</body>
+<script src="js/forpractice.js"></script>
+</html>
